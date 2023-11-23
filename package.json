@@ -1,0 +1,16 @@
+{
+  "name": "weatherforecast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "build": "tailwindcss -i ./src/style.css -o ./dist/output.css && esbuild ./src/main.ts --bundle --minify --outfile=./dist/script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.19.7",
+    "tailwindcss": "^3.3.5"
+  }
+}

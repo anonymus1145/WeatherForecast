@@ -1,0 +1,1 @@
+(()=>{document.addEventListener("DOMContentLoaded",()=>{let t=document.getElementById("app"),e=document.createElement("h1");e.textContent="Hello World!",e.className="text-xl",t?.appendChild(e)});})();
