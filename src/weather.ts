@@ -1,3 +1,5 @@
+import { apiKey } from "./keys";
+
 function weather() {
   return {
     temp_c: 0,
@@ -10,7 +12,7 @@ function weather() {
 
 async function getWeather(city: string) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=613ea2e1e83f470587d155741232311&q=${city}&aqi=yes`
+    `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`
   );
   const data = await response.json();
 
