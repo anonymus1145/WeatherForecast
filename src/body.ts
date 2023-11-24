@@ -1,4 +1,5 @@
 export default function createBody() {
+
     let body = document.querySelector('body');
     body?.classList.add('bg-fixed', 'bg-cover', 'bg-no-repeat');
     body?.setAttribute('style', 'background-image: url(/img/pexels-simon-berger-1183099.jpg)');
@@ -10,10 +11,11 @@ export default function createBody() {
 
     let div = document.createElement('div');
     div.classList.add('flex', 'justify-center');
+    div.setAttribute('id', 'form');
     body?.appendChild(div);
 
     let input = document.createElement('input');
-    input.type = 'search';
+    input.type = 'text';
     input.setAttribute('id', 'search');
     input.classList.add('my-10', 'py-2', 'w-1/4', 'text-sm', 'text-white', 'bg-inherit', 'rounded-md', 'pl-10','hover:bg-slate-800', 'focus:bg-slate-800');
     input.placeholder = 'Search for a city...';
@@ -21,6 +23,7 @@ export default function createBody() {
 
     let button = document.createElement('button');
     button.classList.add('my-10', 'py-2', 'px-4', 'text-sm', 'text-white', 'bg-inherit', 'rounded-md');
+    button.setAttribute('id', 'submit');
     div?.appendChild(button);
 
     let span = document.createElement('span');
